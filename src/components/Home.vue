@@ -35,7 +35,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 export default {
   name: "Home",
   data: function(){
@@ -194,9 +194,10 @@ input {
 
 .card {
   overflow: hidden;
-  border-radius: 3px;
+  border-radius: 10px;
   background: #212121;
   padding: 1% 2% 2% 2%;
+  /*margin-bottom: 50%;*/
 
 }
 

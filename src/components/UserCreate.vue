@@ -1,6 +1,6 @@
 <template>
   <div id="UserCreate">
-    <h2>{{body}}</h2>
+    <h1>{{ body }}</h1>
   </div>
 </template>
 
@@ -33,6 +33,13 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+#UserCreate{
+  margin: 5%;
+  text-align: center;
+  background: #212121;
+  padding: 5%;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
 </style>
