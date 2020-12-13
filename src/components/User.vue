@@ -1,23 +1,25 @@
 <template>
   <div id="User">
-    <h2>Los datos de <span> {{name}} </span> son: </h2>
-    <ul>
-      <li>
-        Nombre: {{name}}
-      </li>
-      <li>
-        Apellido: {{surname}}
-      </li>
-      <li>
-        ID: {{national_id}}
-      </li>
-      <li>
-        Correo: {{email}}
-      </li>
-      <li>
-        Teléfono: {{phone}}
-      </li>
-    </ul>
+    <div id="contenido">
+      <h2>Los datos de <span> {{name}} </span> son: </h2>
+      <ul>
+        <li>
+          Nombre: {{name}}
+        </li>
+        <li>
+          Apellido: {{surname}}
+        </li>
+        <li>
+          ID: {{national_id}}
+        </li>
+        <li>
+          Correo: {{email}}
+        </li>
+        <li>
+          Teléfono: {{phone}}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -51,18 +53,23 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #User{
-  width: 100%;
-  height: 100%;
+  width: 20%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+
+  margin: 5% auto auto;
+  background: #212121;
+  padding: 2%;
+  color: #FFFFFF;
+  border-radius: 10px;
 }
+
 #User h2{
   font-size: 180%;
-  color: #212121;
+  color: #FFFFFF;
 }
 #User span{
   color: #757575;
