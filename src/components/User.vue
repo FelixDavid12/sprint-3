@@ -1,6 +1,7 @@
 <template>
   <div id="User">
-    <div id="contenido">
+
+    <div v-if="national_id != null">
       <h2>Los datos de <span> {{name}} </span> son: </h2>
       <ul>
         <li>
@@ -20,6 +21,11 @@
         </li>
       </ul>
     </div>
+
+    <div v-else>
+      <h2>El usuario <span>{{name}}</span> no existe. </h2>
+    </div>
+
   </div>
 </template>
 
@@ -29,11 +35,11 @@ export default {
   name: 'User',
   data: function (){
     return {
-      name: "",
-      surname: "",
-      national_id: 0,
-      email: "",
-      phone: 0
+      name: null,
+      surname: null,
+      national_id: null,
+      email: null,
+      phone: null
     }
   },
   created: function(){
