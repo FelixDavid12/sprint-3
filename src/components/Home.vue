@@ -9,7 +9,7 @@
         <input class="input--style-3" name="email" placeholder="Correo" type="email" v-model="email"/><br>
         <input class="input--style-3" name="phone" placeholder="Celular" type="number" v-model="phone"/><br>
 
-        <button class="btn btn--pill btn--green" v-on:click="getFormValues">Submit</button>
+        <button class="btn btn--pill btn--green" v-on:click="getFormValues">Crear</button>
       </form>
     </section>
 
@@ -27,7 +27,7 @@
       <form>
         <input class="input--style-3" placeholder="Nombre" name="name" type="text" v-model="name"/>
 
-        <button class="btn btn--pill btn--green" v-on:click="getUser">Submit</button>
+        <button class="btn btn--pill btn--green" v-on:click="getUser">Buscar</button>
       </form>
     </section>
 
