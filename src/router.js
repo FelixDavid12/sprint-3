@@ -1,8 +1,9 @@
-import vueRouter from 'vue-router'
-import Home from './components/Home'
-import User from './components/User'
-import UserCreate from './components/UserCreate'
-import App from './App'
+import vueRouter from 'vue-router';
+import Home from './components/Home';
+import User from './components/User';
+import UserCreate from './components/UserCreate';
+import App from './App';
+import Users from "./components/Users";
 
 const router = new vueRouter({
   mode: 'history',
@@ -27,6 +28,11 @@ const router = new vueRouter({
       path: '/user/create',
       name: "user_create",
       component: UserCreate
+    },
+    {
+      path: '/users',
+      name: "users",
+      component: Users
     },
 
   ]

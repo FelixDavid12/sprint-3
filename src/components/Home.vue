@@ -19,6 +19,7 @@
         <ul>
           <li v-for="error in errors">{{ error }}</li>
         </ul>
+
       </p>
     </section>
 
@@ -28,6 +29,7 @@
         <input class="input--style-3" placeholder="Nombre" name="name" type="text" v-model="name"/>
 
         <button class="btn btn--pill btn--green" v-on:click="getUser">Buscar</button>
+        <button class="btn btn--pill btn--green" v-on:click="getUsers">Usuarios</button>
       </form>
     </section>
 
@@ -97,6 +99,10 @@ export default {
 
       e.preventDefault();
 
+    },
+    getUsers(e){
+      this.$router.push({name: "users", params:{}})
+      e.preventDefault();
     }
   }
 }
