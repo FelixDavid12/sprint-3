@@ -4,11 +4,14 @@
       <h1>Sprint 3</h1>
       <nav>
         <button v-on:click="init">Inicio</button>
+<!--        <button v-on:click="goHome">Home</button>-->
+<!--        <button v-on:click="goApp">App</button>-->
       </nav>
     </div>
 
     <div class="main-component">
-      <router-view></router-view>
+<!--      <router-view v-if="$route.name !== 'root'"></router-view>-->
+      <router-view ></router-view>
     </div>
 
     <div class="footer">
@@ -50,7 +53,13 @@ export default {
           params: {name: "d", surname: "c.sur", national_id: 3, email: "c@c.com", phone: 3}
         })
       }
-    }
+    },
+    // goHome: function(){
+    //   this.$router.push({name: "home"})
+    // },
+    // goApp: function(){
+    //   this.$router.push({name: "root"})
+    // }
   },
   beforeCreate: function(){
     localStorage.setItem('current_username', 'a')

@@ -16,9 +16,9 @@
     <section class="card error-card">
       <p v-if="errors.length">
         <b>Por favor, corrija el(los) siguiente(s) error(es):</b>
-      <ul>
-        <li v-for="error in errors">{{ error }}</li>
-      </ul>
+        <ul>
+          <li v-for="error in errors">{{ error }}</li>
+        </ul>
       </p>
     </section>
 
@@ -48,7 +48,6 @@ export default {
       email: null,
       phone: null
     }
-
   },
   methods: {
     getFormValues: function (e){
