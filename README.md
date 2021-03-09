@@ -1,4 +1,4 @@
-# sprint_3
+# Sprint 3, Misión TIC 2022
 
 > Proyecto de capa de presentación para el Sprint 3 del Ciclo III
 
